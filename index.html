@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나와 맞는 LLM은?</title>
+<link rel="stylesheet" href="design.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>나와 맞는 LLM은?</h1>
+  <div id="question1" class="question">
+    <p>1. 대화할 때 선호하는 유형은?</p>
+    <input type="radio" name="q1" value="1"> 내 말의 의도를 잘 파악해 주는 사람<br>
+    <input type="radio" name="q1" value="2"> 말을 유창하게 잘하는 사람<br>
+    <input type="radio" name="q1" value="3"> TMI가 좀 많지만, 말을 구체적으로 하는 사람<br>
+  </div>
+  <div id="question2" class="question">
+    <p>2. 대화할 때 줄임말(ㅇㅇ도 포함), 신조어, 유행어 등을</p>
+    <input type="radio" name="q2" value="1">전혀 사용 안 함<br>
+    <input type="radio" name="q2" value="2">꽤 자주 사용함<br>
+    <input type="radio" name="q2" value="3">가끔 사용함<br>
+  </div>
+  <div id="question3" class="question">
+    <p>3. 나는 질문했을 때</p>
+    <input type="radio" name="q3" value="1">물어본 내용에 대해서만 간략하게 답변해 주는 것이 좋다.<br>
+    <input type="radio" name="q3" value="2">물어본 내용과 관련한 내용까지 꽤 구체적으로 답변해 주는 것이 좋음<br>
+    <input type="radio" name="q3" value="3">물어본 내용에 대해 간략하게 말하고, 관련한 조언까지 해 주는 것이 좋음<br>
+  </div>
+  <div id="question4" class="question">
+    <p>4. 다음 중 내가 가장 관심 있는 분야는</p>
+    <input type="radio" name="q4" value="1">코딩<br>
+    <input type="radio" name="q4" value="2">kpop<br>
+    <input type="radio" name="q4" value="3">최신정보<br>
+  </div>
+  <div id="question5" class="question">
+    <p>5. 나는 맞춤법을</p>
+    <input type="radio" name="q5" value="1">무조건 맞춘다.<br>
+    <input type="radio" name="q5" value="2">일부러 틀리곤 한다.<br>
+    <input type="radio" name="q5" value="3">대충 맞춘다.<br>
+  </div>
+  <button onclick="calculateResult()">결과 확인하기</button>
+  <div id="result" style="display:none;">
+    <h2>결과</h2>
+    <p id="resultText"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
